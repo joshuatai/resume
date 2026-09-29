@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>履歷 - 戴嘉浚 (Joshua Tai)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #e5e9ed;
+      color: #333333;
+    }
+
+    .bg-badge-green {
+      background-color: #8da48e;
+    }
+
+    .border-card-blue {
+      border: 1px solid #7bc6e6;
+    }
+
+    .text-custom-gray {
+      color: #4a5568;
+    }
+
+    .text-custom-light-gray {
+      color: #888888;
+    }
+
+    .tag-bg {
+      background-color: #f0f2f4;
+      color: #4a5568;
+    }
+
+    /* Vertical Timeline Styles */
+    .timeline-container {
+      position: relative;
+    }
+
+    .timeline-line {
+      position: absolute;
+      left: 10px;
+      top: 20px;
+      bottom: -32px;
+      width: 1px;
+      background-color: #b0b0b0;
+    }
+
+    .timeline-dot {
+      width: 11px;
+      height: 11px;
+      border: 2px solid #555555;
+      background-color: #ffffff;
+      border-radius: 50%;
+      position: absolute;
+      left: 5px;
+      top: 7px;
+      z-index: 2;
+    }
+
+    @media print {
+      body {
+        background-color: #ffffff;
+      }
+
+      .page-container {
+        box-shadow: none !important;
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: none !important;
+      }
+    }
+
+    /* ---- Global font-size bump: +2px per level ---- */
+    .text-xs {
+      font-size: 14px !important;
+    }
+
+    .text-sm {
+      font-size: 16px !important;
+    }
+
+    .text-base {
+      font-size: 18px !important;
+    }
+
+    .text-lg {
+      font-size: 20px !important;
+    }
+
+    .text-xl {
+      font-size: 22px !important;
+    }
+
+    .text-2xl {
+      font-size: 26px !important;
+    }
+
+    .text-3xl {
+      font-size: 32px !important;
+    }
+
+    .text-4xl {
+      font-size: 38px !important;
+    }
+
+    .text-5xl {
+      font-size: 44px !important;
+    }
+
+    @media (min-width: 768px) {
+      .md\:text-xs {
+        font-size: 14px !important;
+      }
+
+      .md\:text-sm {
+        font-size: 16px !important;
+      }
+
+      .md\:text-base {
+        font-size: 18px !important;
+      }
+
+      .md\:text-lg {
+        font-size: 20px !important;
+      }
+
+      .md\:text-xl {
+        font-size: 22px !important;
+      }
+
+      .md\:text-2xl {
+        font-size: 26px !important;
+      }
+
+      .md\:text-3xl {
+        font-size: 32px !important;
+      }
+
+      .md\:text-4xl {
+        font-size: 38px !important;
+      }
+
+      .md\:text-5xl {
+        font-size: 44px !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="py-8 min-h-screen">
+
+  <div class="page-container max-w-5xl mx-auto bg-white shadow-lg rounded-sm p-8 md:p-12 border-t-8 border-[#8da48e]">
+
+    <!-- Header Section with Profile Photo -->
+    <header class="mb-10 pb-6 border-b border-gray-100 flex flex-col md:flex-row items-center md:items-start gap-6">
+      <!-- Profile Avatar -->
+      <div></div>
+
+      <!-- User Information -->
+      <div class="flex-grow text-center md:text-left">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 tracking-tight mb-4">戴嘉浚 Joshua Tai</h1>
+        <div class="flex items-center justify-center md:justify-start text-gray-600 font-medium text-sm md:text-base">
+          <span class="font-bold mr-8 text-gray-700">Email</span>
+          <a href="mailto:joshua_tai@trendmicro.com" class="text-gray-600 hover:underline">joshua_tai@trendmicro.com</a>
+        </div>
+        <p class="mt-2 text-gray-600 font-medium text-sm md:text-base">
+          Staff Developer | Full-Stack | Frontend Architecture | Front-End Lead | Technical Consultant | Principal
+          Engineering Contributor
+        </p>
+      </div>
+    </header>
+
+    <!-- About / Summary Section -->
+    <section class="mb-12">
+      <div class="flex items-end mb-4">
+        <div class="bg-badge-green text-white font-bold text-center py-2 px-4 text-lg w-32 md:w-36">Summary</div>
+        <div class="flex-1 border-b-4 border-[#8da48e]"></div>
+      </div>
+      <div class="text-custom-gray leading-relaxed text-sm md:text-base space-y-4">
+        <p>
+          I am a Senior Full-Stack Developer & Architect with over 22 years of professional software engineering
+          experience, specializing in front-end system architecture, enterprise-grade design systems, complex system
+          integration, AI-SDLC automation, and full-stack cloud services.
+        </p>
+        <p>
+          As a principal engineering contributor at Trend, I have served as the Front-End (FED) lead across many
+          projects and teams, setting technical direction for core design systems—Agentic UI (for Agentic Platform) and
+          Tonic One (for Vision One)—driving end-to-end system integrations across Model Context Protocol (MCP)
+          servers, bidirectional Figma-to-code pipelines, RAG platforms, and automated editorial publishing systems.
+          Having established frontend architectures across 15+ commercial SaaS applications and engineered seamless
+          integrations across multi-cloud APIs and data pipelines, I excel at unifying design systems, scalable software
+          engineering, and next-generation AI operating environments.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section class="mb-12">
+
+      <div class="flex items-end mb-4">
+        <div class="bg-badge-green text-white font-bold text-center py-2 px-4 text-lg w-32 md:w-36">Skills</div>
+        <div class="flex-1 border-b-4 border-[#8da48e]"></div>
+      </div>
+      <!-- <div class="flex items-baseline gap-3 mb-2">
+        <h3 class="text-xl font-bold text-gray-800">software engineering</h3>
+      </div>
+      <p class="text-custom-gray text-sm md:text-base mb-4 leading-relaxed">
+        Led front-end infrastructure for core design systems and drove end-to-end system integrations across various
+        platforms and pipelines.
+      </p> -->
+
+      <!-- Skill Overview Tags -->
+      <div class="flex flex-wrap gap-2 mb-2">
+        <span class="tag-bg text-sm px-2.5 py-1 rounded">front-end system architecture</span>
+        <span class="tag-bg text-sm px-2.5 py-1 rounded">enterprise-grade design systems</span>
+        <span class="tag-bg text-sm px-2.5 py-1 rounded">complex system integration</span>
+        <span class="tag-bg text-sm px-2.5 py-1 rounded">AI-SDLC automation</span>
+        <span class="tag-bg text-sm px-2.5 py-1 rounded">full-stack cloud services</span>
+      </div>
+
+      <!-- Complete Uncut Skills Lists -->
+      <div class="space-y-6 pt-6 border-t border-gray-200 text-xs md:text-sm text-custom-gray">
+
+        <!-- Frontend -->
+        <div>
+          <h4 class="font-bold text-gray-800 text-base md:text-lg border-b border-gray-100 pb-1 mb-2">Frontend</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2 text-sm">
+            <div><strong class="text-gray-700">Core Languages:</strong> TypeScript / JavaScript, HTML5 / CSS3</div>
+            <div><strong class="text-gray-700">SPA Frameworks & Libraries:</strong> React, Angular / Angular.js,
+              Next.js, jQuery</div>
+            <div><strong class="text-gray-700">Responsive Design:</strong> Container Queries, Media Query, Responsive
+              Web Design（RWD）/ Adaptive Web Design（AWD）</div>
+            <div><strong class="text-gray-700">Styling:</strong> Styled System, Emotion, CSS Modules, Bootstrap,
+              Material UI（MUI）, Chakra UI</div>
+            <div><strong class="text-gray-700">State Management & Data Layer:</strong> Redux / Redux Toolkit Query（RTK
+              Query）, React Grid Layout, react-data-grid, RxJS (Reactive Programming)</div>
+            <div><strong class="text-gray-700">Forms & Validation:</strong> React Hook Form, Yup</div>
+            <div><strong class="text-gray-700">Internationalization:</strong> i18next</div>
+          </div>
+        </div>
+
+        <!-- Design Systems & Micro-Frontends -->
+        <div>
+          <h4 class="font-bold text-gray-800 text-base md:text-lg border-b border-gray-100 pb-1 mb-2">Design Systems &
+            Micro-Frontend</h4>
+          <ul class="list-disc pl-5 space-y-1 text-sm">
+            <li>Material Design, Carbon Design System, Ant Design</li>
+            <li>Design Tokens (W3C Design Tokens, CSS Variables, primitive / semantic / component 3-tier structure)</li>
+            <li>Dark / Light Theme Switching</li>
+            <li>Figma Ecosystem: Figma SDK, Code Connect, Figma Plugins SDK, Figma Remote MCP Server</li>
+            <li>Micro-Frontend Architecture (UIC EventBus / iframe, Module Federation)</li>
+            <li>WCAG 2.1 AA</li>
+            <li>Open-Source UI Component Library Contributions</li>
+          </ul>
+        </div>
+
+        <!-- AI / Machine Learning -->
+        <div>
+          <h4 class="font-bold text-gray-800 text-base md:text-lg border-b border-gray-100 pb-1 mb-2">AI / Machine
+            Learning</h4>
+          <div class="space-y-4 text-sm">
+            <div>
+              <strong class="text-gray-700">AI-SDLC Automation & Agent Engineering:</strong>
+              <ul class="list-disc pl-5 mt-0.5 space-y-0.5">
+                <li>Model Context Protocol (MCP): MCP Server Development & Integration</li>
+                <li>Claude Code / Skills（Marketplace, Plugin / Custom Automation Skills / Loop Engineering）</li>
+                <li>AI Agent Toolchains & IDE Integration (Claude Code, Kiro / Steering)</li>
+                <li>Multi-Agent Orchestration (Multi-Agent Orchestration / Collaboration)</li>
+                <li>Agentic Workflow</li>
+                <li>Agent Development Frameworks & SDKs: OpenAI Agents SDK, Claude Agent SDK</li>
+              </ul>
+            </div>
+            <div>
+              <strong class="text-gray-700">RAG (Retrieval-Augmented Generation):</strong>
+              <ul class="list-disc pl-5 mt-0.5 space-y-0.5">
+                <li>Embeddings (Azure OpenAI Embeddings)</li>
+                <li>Vector Databases: Cosmos DB Vector Search</li>
+                <li>Vector Similarity Search, LangChain, Retrieval Pipeline, Hybrid Full-Text / Vector Retrieval</li>
+              </ul>
+            </div>
+            <div><strong class="text-gray-700">Generative UI:</strong> OpenUI DSL, CopilotKit</div>
+            <div><strong class="text-gray-700">Other AI Tools & Services:</strong> Codium PR-Agent (AI Code Review),
+              LLM-Assisted Design Validation, AI Vision / LLM Services: Azure OpenAI (Completion, OCR), Google Cloud
+              Vision API</div>
+          </div>
+        </div>
+
+        <!-- Backend / Full-Stack & Security -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <h4 class="font-bold text-gray-800 text-base md:text-lg border-b border-gray-100 pb-1 mb-2">Backend</h4>
+            <p>Node.js, Express, Python, C# .NET / ASPX, PHP, ASP.NET, REST API Design & Integration (Swagger UI),
+              GraphQL</p>
+          </div>
+          <div class="text-sm">
+            <h4 class="font-bold text-gray-800 text-base md:text-lg border-b border-gray-100 pb-1 mb-2">Security & Auth
+              Standards</h4>
+            <ul class="list-disc pl-5 mt-0.5 space-y-4">
+              <li><strong class="text-gray-700">Identity Protocols:</strong> OAuth 2.0 / OpenID Connect (OIDC), SAML
+                2.0,
+                JWT (JSON Web Tokens)</li>
+              <li><strong class="text-gray-700">Web Security:</strong> OWASP Top 10 (XSS, CSRF, SQLi, CORS), Content
+                Security Policy (CSP)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Cloud / Infra & Database -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div>
+            <h4 class="font-bold text-gray-800 text-base md:text-lg border-b border-gray-100 pb-1 mb-2">Cloud /
+              Infrastructure</h4>
+            <ul class="list-disc pl-5 mt-0.5 space-y-4">
+              <li><strong class="text-gray-700">Azure / Microsoft Cloud:</strong> Azure Functions, Cosmos DB Vector
+                Search,
+                Azure OpenAI, Azure Blob Storage, Azure Service Bus, Microsoft Entra ID (formerly Azure AD), Azure Data
+                Explorer (ADX)</li>
+              <li><strong class="text-gray-700">GCP:</strong> Vision API, Cloud SQL, Cloud Code, Google Apps Script</li>
+              <li><strong class="text-gray-700">AWS:</strong> Amazon Web Services (Cognito, CloudFront, Amplify)</li>
+              <li><strong class="text-gray-700">Containers & DevOps:</strong> Docker, Kubernetes (k8s), GitHub Actions
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-800 text-sm md:text-base border-b border-gray-100 pb-1 mb-2">Database /
+              Search / Data</h4>
+            <ul class="list-disc pl-5 mt-0.5 space-y-4">
+            <li>MongoDB, SQL, Stored Procedures / User-Defined Functions (UDF), Cosmos DB</li>
+            <li><strong class="text-gray-700">Analytics:</strong> Matomo, Pendo, Alchemer (Behavior Analytics & Surveys),
+              User Behavior Tracking（UBT）Analytics, WebTrends Analytics</li>
+              </ul>
+          </div>
+        </div>
+
+        <!-- Data Vis, Real-time, Cross-Platform, Content, DevTools -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-3 text-sm">
+          <div>
+            <h4 class="font-bold text-gray-800 text-base md:text-lg border-b border-gray-100 pb-1 mb-1">Data
+              Visualization</h4>
+            <p>Apache ECharts, Highcharts, D3.js, Paper.js</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-800 text-base md:text-lg border-b border-gray-100 pb-1 mb-1">Real-Time
+              Communication</h4>
+            <p>WebSockets / Long Polling, EventBus, Data Queue</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-800 text-base md:text-lg border-b border-gray-100 pb-1 mb-1">Cross-Platform
+            </h4>
+            <p>Electron (Desktop Application Development)</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-800 text-base md:text-lg border-b border-gray-100 pb-1 mb-1">Content /
+              Documentation</h4>
+            <p>DITA-OT / DITAC（XML Technical Documentation Compilation）, Multi-Language Documentation Publishing,
+              Dynamics 365</p>
+          </div>
+        </div>
+
+        <!-- Development Tools / Automation / CI/CD -->
+        <div>
+          <h4 class="font-bold text-gray-800 text-base md:text-lg border-b border-gray-100 pb-1 mb-2">Development Tools
+            / Automation / CI/CD</h4>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-2 text-sm">
+            <div><strong class="text-gray-700">Unit Testing:</strong> Jest, Vitest, React Testing Library</div>
+            <div><strong class="text-gray-700">E2E Testing:</strong> Playwright</div>
+            <div><strong class="text-gray-700">Package & Monorepo:</strong> npm, Lerna, Monorepo</div>
+            <div class="md:col-span-3 mt-2"><strong class="text-gray-700">CI/CD & Tooling:</strong> Chrome Extension（Manifest
+              V3）, Bower, GitLab Pages, GitHub Actions, GitHub Workflows, GitLab CI, JFrog Artifactory</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Job History Section -->
+    <section class="mb-12">
+      <!-- Snapshot Header Style -->
+      <div class="flex items-end mb-4">
+        <div class="bg-badge-green text-white font-bold text-center py-2 px-4 text-lg w-32 md:w-36">Experience</div>
+        <div class="flex-1 border-b-4 border-[#8da48e]"></div>
+      </div>
+
+      <!-- Experience Items (Timeline) -->
+      <div class="space-y-14">
+
+        <!-- Job Item 1: TrendAI -->
+        <div>
+          <!-- Timeline Date -->
+          <span class="text-custom-light-gray font-normal text-sm md:text-base">Jul 2025 - Present · 1 yr 3 mos</span>
+          <div class="flex flex-col md:flex-row relative mt-2">
+            <div class="w-full md:w-5 pr-4 relative flex-shrink-0">
+              <div class="hidden md:block timeline-dot"></div>
+              <div class="hidden md:block timeline-line"></div>
+            </div>
+            <!-- Job Content -->
+            <div class="flex-1 pl-0 md:pl-6">
+              <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
+                <h3 class="flex text-lg md:text-xl font-bold text-gray-900 gap-6">
+                  <span class="font-bold text-gray-800 text-base md:text-lg">TrendAI</span>
+                  <span>
+                    Staff Front-End / Full-Stack Developer, User Experience
+                  </span>
+                </h3>
+              </div>
+
+              <p class="text-custom-gray text-sm md:text-base mb-4 leading-loose">
+                Lead front-end architecture, design system infrastructure, and AI-SDLC automation for enterprise
+                security
+                platforms:
+              </p>
+
+              <div class="space-y-6 text-sm md:text-md text-custom-gray">
+                <!-- Agentic UI Design System -->
+                <div>
+                  <h3 class="font-bold text-gray-800 text-lg mb-1">Agentic UI Design System (for Agentic Platform)</h3>
+                  <ul class="list-disc pl-5 space-y-4 text-base">
+                    <li><strong>Component Library & Responsive Architecture:</strong> Engineered and published the
+                      production React component library (<code>agentic-ui</code>), incorporating container-query
+                      responsive grids, custom component APIs, and dynamic layouts.</li>
+                    <li><strong>Design Tokens & Theme Automation:</strong>
+                      <ul class="list-disc pl-5 space-y-2">
+                        <li>Integrated Figma variables with automated token
+                          transformation pipelines, syncing W3C design tokens to AUX UI theme packages.
+                        </li>
+                        <li>Built custom Figma Plugins, Code Connect bindings, and
+                          LLM-assisted Loop Engineering skills to automate token verification and Dark/Light theme
+                          switching.
+                        </li>
+                      </ul>
+                    </li>
+                    <li><strong>Generative UI & Deployment Pipeline:</strong>
+                      <ul class="list-disc pl-5 space-y-2">
+                        <li>Conducted POCs on OpenUI DSL, CopilotKit,
+                          and Generative UI paradigms to guide LLM-driven dynamic UI rendering.</li>
+                        <li>Automated package distribution
+                          and release channels using JFrog Artifactory and GitHub EMU organizations.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  </ul>
+                  <div class="flex flex-wrap gap-1.5 mt-4">
+                    <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack:</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">React</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">TypeScript</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Container Queries (cqw/cqh/cqi)</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Styled System</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">W3C Design Tokens</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Figma SDK</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Code Connect</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">OpenUI DSL</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">CopilotKit</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">WCAG 2.1 AA</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">JFrog Artifactory</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">GitHub EMU</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">GitHub Actions</span>
+                  </div>
+                </div>
+
+                <!-- Tonic One Design System V4 -->
+                <div>
+                  <h4 class="font-bold text-gray-800 text-lg mb-1">Tonic One Design System V4 (for Vision One)</h4>
+                  <ul class="list-disc pl-5 space-y-4 text-base">
+                    <li><strong>System Evolution & Dark/Light Mode Realization:</strong> Co-led the taskforce
+                      transitioning Tonic One to v4, driving engineering implementation for full Dark / Light mode
+                      support
+                      across Vision One. Architected a 3-tier design token structure (primitive, semantic, component),
+                      theme resolvers, and integrated token support for DataGrid and ECharts.</li>
+                    <li><strong>Agentic Developer Tooling:</strong> Enhanced and maintained the local Model Context
+                      Protocol server (<code>@tonic-one/mcp</code>), enabling AI agents (Claude Code, Kiro) to inspect,
+                      generate, and validate production-compliant UI code and tokens.</li>
+                  </ul>
+                  <div class="flex flex-wrap gap-1.5 mt-4">
+                    <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack:</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">React</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">TypeScript</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Design Tokens (CSS Variables)</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Emotion</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Styled System</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">React DataGrid</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Apache ECharts</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Model Context Protocol (MCP)</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Claude Code</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Kiro IDE</span>
+                  </div>
+                </div>
+
+                <!-- Custom AI-SDLC Tooling & Automation -->
+                <div>
+                  <h4 class="font-bold text-gray-800 text-lg mb-1">Custom AI-SDLC Tooling & Automation</h4>
+                  <ul class="list-disc pl-5 space-y-4 text-base">
+                    <li><strong>Bidirectional Workflow Integration:</strong> As part of the Trend Common Platform (TCP)
+                      initiatives, engineered custom Claude Code Skills, Figma Claude Code Plugins / MCP integrations,
+                      and
+                      Figma SDK scripts to automate "Prompt-to-Figma" and "Code-to-Figma Spec" developer workflows.</li>
+                  </ul>
+                  <div class="flex flex-wrap gap-1.5 mt-4">
+                    <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack:</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Node.js</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">TypeScript</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Claude Code Skills</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Figma Plugins SDK</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Figma Remote MCP Server</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">REST APIs</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">JSON</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Playwright</span>
+                  </div>
+                </div>
+
+                <!-- Full-Stack AI & Cloud Services -->
+                <div>
+                  <h4 class="font-bold text-gray-800 text-lg mb-1">Full-Stack AI & Cloud Services</h4>
+                  <ul class="list-disc pl-5 space-y-4 text-base">
+                    <li>
+                      <strong>DesignScape & Guideline Keeper (Full-Stack RAG System):</strong> Architected an end-to-end
+                      RAG platform providing design guideline consultation and automated compliance auditing across
+                      Vision
+                      One apps.
+                      <br>
+                      <div class="flex flex-wrap gap-1.5 mt-4">
+                        <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack:</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Azure Functions (Python)</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">LangChain</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Cosmos DB Vector Search</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Azure OpenAI (Embeddings, Completion,
+                          OCR)</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Figma API</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">REST APIs</span>
+                      </div>
+                    </li>
+                    <li>
+                      <strong>Online Help Center (OHC) Publishing & AI Pipeline Service:</strong> Maintained and
+                      modernized the multi-language publishing service for <code>docs.trendmicro.com</code>. Built
+                      serverless Elixir GitHub Actions Pipelines paired with custom Astral Chooser Chrome Extensions to
+                      enable automated editorial publishing, while integrating AI summarization workflows to
+                      continuously
+                      ingest and feed documentation into Vision One AI (Companion) for real-time in-product assistance.
+                      <br>
+                      <div class="flex flex-wrap gap-1.5 mt-4">
+                        <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack:</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Node.js</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Python</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Elixir Engine</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">DITAC / DITA-OT</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Azure Blob Storage</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Azure Service Bus</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Dynamics 365 / Dataverse APIs</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Solr / Eureka Search</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">GitHub Actions</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Chrome Extension (Manifest V3)</span>
+                      </div>
+                    </li>
+                    <li>
+                      <strong>Mission Control Platform:</strong> Modernized MKT training and gamification services
+                      featuring real-time scoreboard logic.
+                      <br>
+                      <div class="flex flex-wrap gap-1.5 mt-4">
+                        <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack:</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">React</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Next.js</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Material UI (MUI)</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">C# .NET</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">AWS Cognito</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">AWS Amplify</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">WebSockets / Long Polling</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Job Item 2: Trend Micro -->
+        <div>
+          <!-- Timeline Date -->
+          <span class="text-custom-light-gray font-normal text-sm md:text-base">Mar 2013 - Jul 2025 · 12 yrs 5
+            mos</span>
+          <div class="flex flex-col md:flex-row relative mt-2">
+            <div class="w-full md:w-5 pr-4 relative flex-shrink-0">
+              <div class="hidden md:block timeline-dot"></div>
+              <div class="hidden md:block timeline-line"></div>
+            </div>
+            <!-- Job Content -->
+            <div class="flex-1 pl-0 md:pl-6">
+              <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
+                <h3 class="flex text-lg md:text-xl font-bold text-gray-900 gap-6">
+                  <span class="font-bold text-gray-800 text-base md:text-lg">Trend Micro</span>
+                  <span>
+                    Staff Front-End / Full-Stack Developer
+                  </span>
+                </h3>
+              </div>
+
+              <p class="text-custom-gray text-sm md:text-base mb-4 leading-loose">
+                Spearheaded frontend architecture, full-stack internal services, design systems, and developer
+                enablement
+                across 15+ commercial SaaS platforms and core infrastructure initiatives:
+              </p>
+
+              <div class="space-y-6 text-xs md:text-sm text-custom-gray">
+                <!-- Vision One Product Suite -->
+                <div>
+                  <h4 class="font-bold text-gray-800 text-lg mb-1">Vision One Product Suite & Front-End Architecture
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-4 text-base">
+                    <li><strong>Architecture & Technical Leadership:</strong> Served as Lead Front-End Developer and
+                      Architect across key Vision One application groups, establishing front-end architecture, state
+                      management, and UI component standards.</li>
+                    <li><strong>Policy & Security Applications:</strong> Unified Policy, Policy Resources
+                      (<code>app-apr-ui</code>, <code>app-spm-ui</code>, <code>app-ves-ei-ui</code>), Endpoint Security
+                      Policy (EPP/SEP/SWP).</li>
+                    <li><strong>Detection & Identity Management:</strong> G2 - XDR Workbench, G0 - CoreTech Identity
+                      Posture, Role Management (RM/LMP), V1 RBAC.</li>
+                    <li><strong>Endpoint & Asset Operations:</strong> G1 - Apex One (Rainbow Project Integration), G1 -
+                      Endpoint Inventory.</li>
+                    <li><strong>Platform Core & Advisory:</strong> G0 - CoreTech Early Warning, G1 - FlyWheel,
+                      Centralized
+                      Dashboard Framework Architecture (React Grid Layout), Report & Analytics, Cloud Security (C1
+                      Migration Advisory Consulting).</li>
+                  </ul>
+                  <div class="flex flex-wrap gap-1.5 mt-4">
+                    <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack:</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">React</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">TypeScript</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Redux Toolkit Query (RTK Query)</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">react-hook-form</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Yup</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">react-data-grid</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">i18next</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">React Grid Layout</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">LaunchDarkly</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Robot Framework (L2 testing)</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Micro-Frontend (UIC EventBus/iframe)</span>
+                  </div>
+                </div>
+
+                <!-- Design System Contributions -->
+                <div>
+                  <h4 class="font-bold text-gray-800 text-lg mb-1">Design System Contributions & Figma Ecosystem Tooling
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-4 text-base">
+                    <li><strong>Tonic UI Core Library:</strong> Open-source core contributor to
+                      <code>@trendmicro/react</code>, building and refining reusable React UI components.
+                    </li>
+                    <li><strong>Design Token Sync Engine:</strong> Developed custom full-stack Figma Plugins to extract,
+                      validate, and synchronize Tonic One Design Tokens directly with GitHub repositories.</li>
+                    <li><strong>Trend Micro Icon Fonts Provider:</strong> Engineered the Icon Fonts Provider service to
+                      manage icon assets across web products, and developed specialized Figma i18n plugins to automate
+                      internationalization design workflows.</li>
+                    <li><strong>Style Portal & Collaborative Systems:</strong> Designed and deployed shared component
+                      systems serving enterprise commercial products including Apex One (A1) and Deep Discovery
+                      Inspector
+                      (DDI).</li>
+                  </ul>
+                  <div class="flex flex-wrap gap-1.5 mt-4">
+                    <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack:</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">React</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">TypeScript</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Figma Plugins SDK</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Icomoon</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Azure Function Apps</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">MongoDB</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Node.js</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Express</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Chrome Extensions</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Style Portal APIs</span>
+                  </div>
+                </div>
+
+                <!-- Full-Stack Internal Applications -->
+                <div>
+                  <h4 class="font-bold text-gray-800 text-lg mb-1">Full-Stack Internal Applications & Automation
+                    Infrastructure</h4>
+                  <ul class="list-disc pl-5 space-y-4 text-base">
+                    <li>
+                      <strong>Elixir Publishing Systems (Web Application):</strong> Managed the full-stack Elixir Web
+                      publishing platform for Technical Writers and L10n teams, handling DITAC XML/DITA-OT compilation,
+                      Azure Blob storage, and multi-language document distribution.
+                      <br>
+                      <div class="flex flex-wrap gap-1.5 mt-4">
+                        <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack:</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Elixir</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Node.js</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Express</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">React</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">MongoDB</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Azure Blob Storage</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">D365 Backend</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">XML / DITA-OT</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Azure AD</span>
+                      </div>
+                    </li>
+                    <li>
+                      <strong>Desktop Version Control System:</strong> Developed a desktop version-control application
+                      for
+                      Online Help content management.
+                      <br>
+                      <div class="flex flex-wrap gap-1.5 mt-4">
+                        <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack:</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Angular</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">TypeScript</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">RxJS</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Electron</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Azure Functions</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">CosmosDB</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">EventBus</span>
+                      </div>
+                    </li>
+                    <li>
+                      <strong>Internal Platforms & Micro-Tools:</strong> Built Davinci (UX Detection Platform), Rio
+                      (Research Repository System), B.E.A.R. (Resource Allocation System), and internal GitLab Pages
+                      with
+                      private Bower package management.
+                      <br>
+                      <div class="flex flex-wrap gap-1.5 mt-4">
+                        <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack:</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">GCP (Vision API, Cloud SQL, Cloud Code)</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Google App Script</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Angular</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Angular.js</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Node.js</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Express</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">MongoDB</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">SQL</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">GitLab CI</span>
+                        <span class="tag-bg text-sm px-2.5 py-1 rounded">Bower</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Analytics & Consulting -->
+                <div>
+                  <h4 class="font-bold text-gray-800 text-lg mb-1">Analytics, Technical Consulting & Enablement
+                    Leadership
+                  </h4>
+                  <ul class="list-disc pl-5 space-y-4 text-base">
+                    <li><strong>Analytics One & UBT Standards:</strong> Partnered with the Data Team on the Analytics
+                      One
+                      initiative to architect and establish standard User Behavior Tracking (UBT) guidelines
+                      specifically
+                      for Vision One, tracking metrics across Matomo, Pendo, and Azure Data Explorer (ADX) via
+                      <code>data-tonic</code> telemetry.
+                    </li>
+                    <li><strong>In-App Survey Consulting:</strong> Served as Lead Technical Consultant for product team
+                      in-app surveys, directing implementation patterns using TypeScript, Pendo, and Alchemer.</li>
+                    <li><strong>GAI Taskforce Leadership & Education:</strong> Led a sub-group evaluating and deploying
+                      AI-assisted code review systems (Codium PR-Agent with Azure OpenAI) to automate pull request
+                      workflows, and instructed front-end engineering courses at Trend Micro University.</li>
+                  </ul>
+                  <div class="flex flex-wrap gap-1.5 mt-4">
+                    <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Matomo</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Pendo</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Azure Data Explorer (ADX)</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Alchemer</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Codium PR-Agent</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Azure OpenAI</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">Docker</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">GitHub Actions</span>
+                    <span class="tag-bg text-sm px-2.5 py-1 rounded">TypeScript</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job Item 3: Trend Micro Senior Frontend -->
+        <div>
+          <!-- Timeline Date -->
+          <span class="text-custom-light-gray font-normal text-sm md:text-base">Mar 2010 - Feb 2013 · 3 yrs</span>
+          <div class="flex flex-col md:flex-row relative mt-2">
+            <div class="w-full md:w-5 pr-4 relative flex-shrink-0">
+              <div class="hidden md:block timeline-dot"></div>
+              <div class="hidden md:block timeline-line"></div>
+            </div>
+            <!-- Job Content -->
+            <div class="flex-1 pl-0 md:pl-6">
+              <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
+                <h3 class="flex text-lg md:text-xl font-bold text-gray-900 gap-6">
+                  <span class="font-bold text-gray-800 text-base md:text-lg">Trend Micro</span>
+                  <span>
+                    Sr. Front-End Developer
+                  </span>
+                </h3>
+              </div>
+
+              <p class="text-custom-gray text-sm md:text-base mb-3 leading-loose">
+                Led front-end development, architecture design, and component frameworks across enterprise and consumer
+                products:
+              </p>
+
+              <div class="space-y-3 text-xs md:text-sm text-custom-gray">
+                <h4 class="font-bold text-gray-800 text-lg mb-1">Enterprise & Consumer Products</h4>
+                <ul class="list-disc pl-5 space-y-4 text-base">
+                  <li><strong>Product Line Development:</strong> Led front-end engineering across key commercial product
+                    lines: Deep Discovery Analyzer, Zero Gravity, Titanium 3.0 (Online Help).</li>
+                  <li><strong>Front-End Leadership & Middleware Architecture:</strong> Served as Front-End Lead for key
+                    product lines, constructing scalable front-end and middleware development architectures.</li>
+                  <li><strong>Trend Micro Bootstrap Framework:</strong> Created and architected the standardized Trend
+                    Micro Bootstrap framework to align UI component patterns across commercial SaaS products.</li>
+                </ul>
+                <div class="flex flex-wrap gap-1.5 mt-4">
+                  <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack:</span>
+                  <span class="tag-bg text-sm px-2.5 py-1 rounded">JavaScript</span>
+                  <span class="tag-bg text-sm px-2.5 py-1 rounded">HTML5</span>
+                  <span class="tag-bg text-sm px-2.5 py-1 rounded">CSS3</span>
+                  <span class="tag-bg text-sm px-2.5 py-1 rounded">Trend Micro Bootstrap</span>
+                  <span class="tag-bg text-sm px-2.5 py-1 rounded">jQuery</span>
+                  <span class="tag-bg text-sm px-2.5 py-1 rounded">REST Middleware APIs</span>
+                  <span class="tag-bg text-sm px-2.5 py-1 rounded">Web Architecture</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job Item 4: Eastern Home Shopping -->
+        <div>
+          <!-- Timeline Date -->
+          <span class="text-custom-light-gray font-normal text-sm md:text-base">Jul 2007 - Feb 2010 · 2 yrs 8
+            mos</span>
+          <div class="flex flex-col md:flex-row relative mt-2">
+            <div class="w-full md:w-5 pr-4 relative flex-shrink-0">
+              <div class="hidden md:block timeline-dot"></div>
+              <div class="hidden md:block timeline-line"></div>
+            </div>
+            <!-- Job Content -->
+            <div class="flex-1 pl-0 md:pl-6">
+              <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
+                <h3 class="flex text-lg md:text-xl font-bold text-gray-900 gap-6">
+                  <span class="font-bold text-gray-800 text-base md:text-lg">Eastern Home Shopping & Leisure Co.,
+                    Ltd. (東森購物)</span>
+                  <span>
+                    Sr. Software Engineer
+                  </span>
+                </h3>
+              </div>
+
+              <div class="space-y-3 text-xs md:text-sm text-custom-gray">
+                <h4 class="font-bold text-gray-800 text-lg mb-1">E-Commerce & Interactive Media Systems</h4>
+                <ul class="list-disc pl-5 space-y-4 text-base">
+                  <li><strong>High-Traffic Web Systems:</strong> Developed high-traffic e-commerce systems,
+                    interactive
+                    Flash media platforms for online TV shopping, automated EDM marketing systems, and web analytics
+                    integration.</li>
+                </ul>
+                <div class="flex flex-wrap gap-1.5 mt-4">
+                  <span class="text-sm px-2.5 py-1 rounded font-bold">Tech Stack:</span>
+                  <span class="tag-bg text-sm px-2.5 py-1 rounded">JavaScript</span>
+                  <span class="tag-bg text-sm px-2.5 py-1 rounded">ActionScript / Flash</span>
+                  <span class="tag-bg text-sm px-2.5 py-1 rounded">PHP</span>
+                  <span class="tag-bg text-sm px-2.5 py-1 rounded">ASP.NET</span>
+                  <span class="tag-bg text-sm px-2.5 py-1 rounded">WebTrends Analytics</span>
+                  <span class="tag-bg text-sm px-2.5 py-1 rounded">Automated Marketing Tools</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+  </div>
+
+</body>
+
+</html>
